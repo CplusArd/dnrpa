@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg bg-light" style="padding: 20px;">
+    <div class="sticky-top">
+            <header class="navbar navbar-expand-lg bg-light" style="padding: 20px;">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
@@ -51,26 +52,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent2">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">¿Como pedirlo?</a>
+                        <a class="nav-link active" aria-current="page" href="#3pasos">¿Como pedirlo?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Lo que incluye</a>
+                        <a class="nav-link active" aria-current="page" href="#incluye">Lo que incluye</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Preguntas Frecuentes</a>
+                        <a class="nav-link active" aria-current="page" href="#preguntas">Preguntas Frecuentes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Medio de Pagos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Validez</a>
+                        <a class="nav-link active" aria-current="page" href="#pagos">Medio de Pagos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    </div>
 
     <!--Page content-->
+    <div id="formulario">
+    </div>
     <div class="container" style="margin-top: 50px;">
         <div class="row">
             <h1>Informe DNRPA online</h1>
@@ -115,40 +116,42 @@
         </div>
 
 
-
-        <div style="margin-top: 200px;"">
+        <div id="3pasos">
+        </div>
+        <div style="margin-top: 100px;">
             <div class=" border border-primary col-6 col-xl-3"></div>
-    </div>
-    <div class="row" style="margin-top: 50px;">
-        <h2>3 simples pasos</h2>
-    </div>
-    <div class="row justify-content-md-center mt-4">
-        <div class="col-xl-3 col-12 mx-auto" style="text-align: center;">
-            <img src="img/icono1.png" alt="" style="width: 200px;">
-            <div class="col-12 col-xl-12 mx-auto mt-3" style="text-align: center;">
-                <h2>Ingresa tu Patente</h2>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            <h2>3 simples pasos</h2>
+        </div>
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-xl-3 col-12 mx-auto" style="text-align: center;">
+                <img src="img/icono1.png" alt="" style="width: 200px;">
+                <div class="col-12 col-xl-12 mx-auto mt-3" style="text-align: center;">
+                    <h2>Ingresa tu Patente</h2>
+                </div>
+            </div>
+            <div class="col-xl-1 col-12 mt-5">
+            </div>
+            <div class="col-xl-4 col-12 mx-auto" style="text-align: center;">
+                <img src="img/icono2.png" width="100px">
+                <div class="col-12 col-xl-12 mt-3" style="text-align: center;">
+                    <h2>Paga como quieras</h2>
+                </div>
+            </div>
+            <div class="col-xl-1 col-12 mt-5">
+            </div>
+            <div class="col-xl-3 col-12 mx-auto mt" style="text-align: center;">
+                <img src="img/icono3.png">
+                <div class="col-12 col-xl-12 mt-3" style="text-align: center;">
+                    <h2>Lo tenes Rapido</h2>
+                </div>
             </div>
         </div>
-        <div class="col-xl-1 col-12 mt-5">
-        </div>
-        <div class="col-xl-4 col-12 mx-auto" style="text-align: center;">
-            <img src="img/icono2.png" width="100px">
-            <div class="col-12 col-xl-12 mt-3" style="text-align: center;">
-                <h2>Paga como quieras</h2>
-            </div>
-        </div>
-        <div class="col-xl-1 col-12 mt-5">
-        </div>
-        <div class="col-xl-3 col-12 mx-auto mt" style="text-align: center;">
-            <img src="img/icono3.png">
-            <div class="col-12 col-xl-12 mt-3" style="text-align: center;">
-                <h2>Lo tenes Rapido</h2>
-            </div>
-        </div>
-    </div>
 
-
-    <div style="margin-top: 200px;"">
+        <div id="incluye">
+        </div>
+        <div style="margin-top: 200px;"">
             <div class=" border border-primary col-6 col-xl-3"></div>
     </div>
     <div class="row" style="margin-top: 50px;">
@@ -193,7 +196,8 @@
         </div>
     </div>
 
-
+    <div id="preguntas">
+    </div>
     <div style="margin-top: 200px;"">
             <div class=" border border-primary col-6 col-xl-3"></div>
     </div>
@@ -256,8 +260,9 @@
             </div>
         </div>
     </div>
-    
 
+    <div id="pagos">
+    </div>
     <div style="margin-top: 200px;">
         <div class=" border border-primary col-6 col-xl-3"></div>
     </div>
@@ -276,10 +281,10 @@
 
 
 
-    <div class="d-grid col-3 mx-auto pb-2" style="margin-top: 200px;">
-        <button type="submit" class="btn rounded-pill btn-success">Obterner Informe</button>
+    <div class="d-grid col-8 col-xl-4 mx-auto pb-2" style="margin-top: 200px;">
+        <button type="submit" class="btn rounded-pill btn-success"><a class="nav-link" href="#formulario">Obterner Informe</a></button>
     </div>
-</div>
+    </div>
 
 
     <footer class="text-white text-center text-lg-start col-xl-12"
@@ -290,12 +295,32 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Footer Content</h5>
-
+                    <h5 class="text-uppercase">INFORME DE DOMINIO EN TODA LA ARGENTINA:</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                        voluptatem veniam, est atque cumque eum delectus sint!
+                        Cuidad Autónoma de Buenos Aires.
+                        Provincia de Buenos Aires.
+                        Provincia de Córdoba.
+                        Provincia de Santa Fe.
+                        Provincia de Neuquén.
+                        Provincia de Río Negro.
+                        Provincia de Mendoza.
+                        Provincia de Misiones.
+                        Provincia de Entre Ríos.
+                        Provincia de Chubut.
+                        Provincia de Tucumán.
+                        Provincia de Santa Cruz.
+                        Provincia de San Luis.
+                        Provincia de Tierra del Fuego.
+                        Provincia de Corrientes.
+                        Provincia de Salta.
+                        Provincia de San Juan.
+                        Provincia de Santiago del Estero.
+                        Provincia de Chaco.
+                        Provincia de La Pampa.
+                        Provincia de Jujuy.
+                        Provincia de La Rioja.
+                        Provincia de Formosa.
+                        Provincia de Catamarca.
                     </p>
                 </div>
                 <!--Grid column-->
